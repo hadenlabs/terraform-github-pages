@@ -5,9 +5,9 @@ import (
 
 	"github.com/gruntwork-io/terratest/modules/terraform"
 
-	"github.com/hadenlabs/terraform-module-template/config"
+	"github.com/hadenlabs/terraform-github-pages/config"
 	"github.com/stretchr/testify/assert"
-	"github.com/hadenlabs/terraform-module-template/internal/common/log"
+	"github.com/hadenlabs/terraform-github-pages/internal/common/log"
 )
 
 func Test{{pascalCase testName}}Success(t *testing.T) {
@@ -15,7 +15,7 @@ func Test{{pascalCase testName}}Success(t *testing.T) {
 	conf := config.Must()
 	logger := log.Factory(*conf)
 	logger.Debugf(
-		"values for test terraform-module-template is",
+		"values for test terraform-github-pages is",
 	)
 
 	terraformOptions := &terraform.Options{
@@ -31,6 +31,6 @@ func Test{{pascalCase testName}}Success(t *testing.T) {
 
 	// This will run `terraform init` and `terraform apply` and fail the test if there are any errors
 	terraform.InitAndApply(t, terraformOptions)
-	outputInstance := terraform.Output(t, terraformOptions, "instance")
-	assert.NotEmpty(t, outputInstance, outputInstance)
+	outputID := terraform.Output(t, terraformOptions, "id")
+	assert.NotEmpty(t, outputID, outputID)
 }

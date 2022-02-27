@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: terraform-module-template
+name: terraform-github-pages
 
 # Tags of this project
 tags:
@@ -19,8 +19,8 @@ email:
   support: support@hadenlabs.com
 
 confluence:
-  space: TerraformModuleTemplate
-  title: Project
+  space: Projects
+  title: TerraformGithubPages
 
 # Logo for this project
 #logo: docs/logo.png
@@ -29,22 +29,22 @@ confluence:
 license: 'LGPL-3.0'
 
 # Canonical GitHub repo
-github_repo: hadenlabs/terraform-module-template
+github_repo: hadenlabs/terraform-github-pages
 
 # Badges to display
 badges:
   - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/terraform-module-template
-    url: https://github.com/hadenlabs/terraform-module-template/releases
+    image: https://img.shields.io/github/release/hadenlabs/terraform-github-pages
+    url: https://github.com/hadenlabs/terraform-github-pages/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code
-    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-github-pages/lint-code
+    url: https://github.com/hadenlabs/terraform-github-pages/actions?workflow=lint-code
   - name: CI
-    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/ci
-    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=ci
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-github-pages/ci
+    url: https://github.com/hadenlabs/terraform-github-pages/actions?workflow=ci
   - name: Test
-    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/test
-    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-github-pages/test
+    url: https://github.com/hadenlabs/terraform-github-pages/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -52,42 +52,41 @@ badges:
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
   - name: KeepAChangelog
-    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    image: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange
     url: https://keepachangelog.com
+  - name: Terraform Version
+    image: https://img.shields.io/badge/terraform-1.x%20|%200.15%20|%200.14%20|%200.13%20|%200.12.20+-623CE4.svg?logo=terraform
+    url: https://github.com/hashicorp/terraform/releases
 
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
-
-  - [Pyenv](https://github.com/pyenv/pyenv)
-  - [Docker](https://www.docker.com)
-  - [python](https://www.python.org)
+  - [gomplate](https://github.com/hairyhenderson/gomplate)
+  - [terraform](https://github.com/hashicorp/terraform)
   - [taskfile](https://github.com/go-task/task)
 
 # Short description of this project
 description: |-
 
-  terraform-module-template for project
+  terraform-github-pages for project
 
   ### Replace name project to New Project
 
   ```bash
-    agr 'terraform-module-template' 'new-project'
+    agr 'terraform-github-pages' 'new-project'
   ```
 
 # How to use this project
 usage: |-
+
   ```hcl
     module "main" {
-      source  = "hadenlabs/terraform-module-template/aws"
+      source  = "hadenlabs/terraform-github-pages/aws"
       version = "0.0.0"
     }
   ```
 
   Full working examples can be found in [examples](./examples) folder.
-
-examples:
-  - 'docs/examples/common.md'
 
 include:
   - 'docs/include/targets.md'

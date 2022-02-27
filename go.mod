@@ -1,4 +1,4 @@
-module github.com/hadenlabs/terraform-module-template
+module github.com/hadenlabs/terraform-github-pages
 
 go 1.16
 
