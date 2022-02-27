@@ -7,7 +7,7 @@ import (
 
 	"github.com/lithammer/shortuuid/v3"
 
-	"github.com/hadenlabs/terraform-module-template/internal/errors"
+	"github.com/hadenlabs/terraform-github-pages/internal/errors"
 )
 
 type FakeUser interface {

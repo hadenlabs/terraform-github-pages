@@ -1,11 +1,11 @@
-<!-- Space: TerraformModuleTemplate -->
-<!-- Parent: Project -->
-<!-- Title: Env Vars -->
+<!-- Space: Projects -->
+<!-- Parent: TerraformGithubPages -->
+<!-- Title: Env Vars TerraformGithubPages -->
 
-<!-- Label: TerraformModuleTemplate -->
+<!-- Label: TerraformGithubPages -->
 <!-- Label: Project -->
 <!-- Label: Env Vars -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ---

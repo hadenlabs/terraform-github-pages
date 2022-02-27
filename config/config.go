@@ -6,8 +6,8 @@ import (
 
 	"github.com/joho/godotenv"
 
-	"github.com/hadenlabs/terraform-module-template/internal/errors"
-	"github.com/hadenlabs/terraform-module-template/internal/version"
+	"github.com/hadenlabs/terraform-github-pages/internal/errors"
+	"github.com/hadenlabs/terraform-github-pages/internal/version"
 )
 
 // Config struct field.
@@ -17,7 +17,7 @@ type Config struct {
 }
 
 const (
-	applicationName = "terraform-module-template"
+	applicationName = "terraform-github-pages"
 )
 
 // ReadConfig read values and files for config.

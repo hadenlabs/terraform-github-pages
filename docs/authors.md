@@ -1,7 +1,3 @@
-<!-- Space: TerraformModuleTemplate -->
-<!-- Parent: Project -->
-<!-- Title: Authors -->
-
 # Authors
 
 ## Leads

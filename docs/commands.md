@@ -1,11 +1,11 @@
-<!-- Space: TerraformModuleTemplate -->
-<!-- Parent: Project -->
-<!-- Title: Commands -->
+<!-- Space: Projects -->
+<!-- Parent: TerraformGithubPages -->
+<!-- Title: Commands TerraformGithubPages -->
 
-<!-- Label: TerraformModuleTemplate -->
+<!-- Label: TerraformGithubPages -->
 <!-- Label: Project -->
 <!-- Label: Commands -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ## Commands
@@ -73,4 +73,54 @@ task terragrunt:module:destroy REGION=us-east-1 STAGE=core MODULE=repository_esl
 
 ```bash
 task terragrunt:state REGION=us-east-1 STAGE=core COMMAND=list
+```
+
+### Confluence
+
+#### Sync Markdown with confluence
+
+```{.bash}
+task mark:sync
+```
+
+### Diagrams
+
+#### Publish diagrams
+
+```{.bash}
+task diagrams:publish
+```
+
+### Changelog
+
+#### Generate Changelog Next Tag
+
+```{.bash}
+task changelog:next APP_TAG={{tag name}}
+```
+
+#### Parameters
+
+| Name     | Description   | sample | Required |
+| -------- | ------------- | ------ | :------: |
+| tag name | Name next tag | 0.1.0  |   yes    |
+
+### Version
+
+#### Version Major
+
+```{.bash}
+task version:major
+```
+
+#### Version Minor
+
+```{.bash}
+task version:minor
+```
+
+#### Version Patch
+
+```{.bash}
+task version:patch
 ```

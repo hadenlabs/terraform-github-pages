@@ -1,9 +1,9 @@
-<!-- Space: TerraformModuleTemplate -->
-<!-- Parent: Project -->
-<!-- Title: Roadmap -->
+<!-- Space: Projects -->
+<!-- Parent: TerraformGithubPages -->
+<!-- Title: Roadmap TerraformGithubPages -->
 
 <!-- Label: Roadmap -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 <!-- Macro: :todo:
@@ -30,7 +30,7 @@
 
 The Roadmap is a list of all the things we're working on for the year.
 
-You can see the corresponding projects on [terraform-module-template](https://github.com/hadenlabs/terraform-module-template)
+You can see the corresponding projects on [terraform-github-pages](https://github.com/hadenlabs/terraform-github-pages)
 
 ## Legend
 
